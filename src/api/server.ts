@@ -307,7 +307,7 @@ function generateRandomNotifications(
   since: string | undefined,
   currentUser: string | null,
   numNotifications: number,
-  db: ModelDB,
+  db: ModelDB
 ) {
   const now = new Date()
   let pastDate: Date

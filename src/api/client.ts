@@ -10,7 +10,7 @@ interface ClientResponse<T> {
 
 export async function client<T>(
   endpoint: string,
-  { body, ...customConfig }: Partial<RequestInit> = {},
+  { body, ...customConfig }: Partial<RequestInit> = {}
 ): Promise<ClientResponse<T>> {
   const headers = { 'Content-Type': 'application/json' }
 
